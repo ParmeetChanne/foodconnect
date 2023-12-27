@@ -35,6 +35,8 @@ export async function createEvent({ userId, event, path }: CreateEventParams) {
     const organizer = await User.findById(userId)
     if (!organizer) throw new Error('Organizer not found')
 
+    //console.log({categoryId: event.categoryId, organizerId: userId})
+
     const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId })
     revalidatePath(path)
 
@@ -88,6 +90,8 @@ export async function deleteEvent({ eventId, path }: DeleteEventParams) {
     await connectToDatabase()
 
     const deletedEvent = await Event.findByIdAndDelete(eventId)
+
+    //Clearing the cache and refetching all the events because the event structure has changed. 
     if (deletedEvent) revalidatePath(path)
   } catch (error) {
     handleError(error)
