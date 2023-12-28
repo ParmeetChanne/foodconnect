@@ -32,7 +32,7 @@ import { IEvent } from "@/lib/database/models/event.model"
 //userId is specified as string, type can be either Create or Update
 type EventFormProps = {
     userId: string
-    type: "Create" | "Update"
+    type: "Share" | "Update"
     event?: IEvent,
     eventId?: string
 }
@@ -69,7 +69,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
         uploadedImageUrl = uploadImages[0].url
     }
 
-    if (type === "Create") {
+    if (type === "Share") {
         try {
             
             const newEvent = await createEvent({
@@ -120,7 +120,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                 render={({ field }) => (
                 <FormItem className="w-full">
                     <FormControl>
-                    <Input placeholder="Event title" {...field} className="input-field" />
+                    <Input placeholder="Food Title" {...field} className="input-field" />
                     </FormControl>
                     <FormMessage />
                 </FormItem>
@@ -177,7 +177,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         <FormControl>
                             <div className="flex-center h-[54px] w-full overflow:hidden rounded-full bg-grey-50 px-4 py-2">
                                 <Image src="/assets/icons/location-grey.svg" alt="calendar" width={24} height={24} />
-                                <Input placeholder="Event location or Online" {...field} className="input-field" />
+                                <Input placeholder="Pickup Spot" {...field} className="input-field" />
                             </div>
                         </FormControl>
                         <FormMessage />
@@ -195,7 +195,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         <FormControl>
                             <div className="flex-center h-[54px] w-full overflow:hidden rounded-full bg-grey-50 px-4 py-2">
                                 <Image src="/assets/icons/calendar.svg" alt="calendar" width={24} height={24} className="filter-grey" />
-                                <p className="ml-3 whitespace-nowrap text-grey-600">Start Date:</p>
+                                <p className="ml-3 whitespace-nowrap text-grey-600">Available From:</p>
                                 <DatePicker selected={field.value} onChange={(date: Date) => field.onChange(date)} showTimeSelect timeInputLabel="Time" dateFormat="MM/dd/yyyy h:mm aa" wrapperClassName="datePicker" />
                             </div>
                         </FormControl>
@@ -212,7 +212,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         <FormControl>
                             <div className="flex-center h-[54px] w-full overflow:hidden rounded-full bg-grey-50 px-4 py-2">
                                 <Image src="/assets/icons/calendar.svg" alt="calendar" width={24} height={24} className="filter-grey" />
-                                <p className="ml-3 whitespace-nowrap text-grey-600">End Date:</p>
+                                <p className="ml-3 whitespace-nowrap text-grey-600">Available Until:</p>
                                 <DatePicker selected={field.value} onChange={(date: Date) => field.onChange(date)} showTimeSelect timeInputLabel="Time" dateFormat="MM/dd/yyyy h:mm aa" wrapperClassName="datePicker" />
                             </div>
                         </FormControl>
@@ -239,7 +239,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         <FormItem>
                             <FormControl>
                                 <div className="flex items-center">
-                                    <label htmlFor="isFree" className="whitespace-nowrap pr-3 leading:none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Free Ticket</label>
+                                    <label htmlFor="isFree" className="whitespace-nowrap pr-3 leading:none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Free Offering</label>
                                     <Checkbox onCheckedChange={field.onChange} checked={field.value} id="isFree" className="mr-2 h-5 w-5 border-2 border-primary-500" />
                                 </div>
                             </FormControl>
@@ -271,7 +271,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                 />
             </div>
             {/* Disabling the button when the user is submitting it */}
-          <Button type="submit" size="lg" disabled={form.formState.isSubmitting} className="button col-span-2 w-full">{form.formState.isSubmitting ? ("Submitting..."): `${type} Event`}</Button>
+          <Button type="submit" size="lg" disabled={form.formState.isSubmitting} className="button col-span-2 w-full">{form.formState.isSubmitting ? ("Submitting..."): `${type} Food`}</Button>
         </form>
       </Form>
   )
