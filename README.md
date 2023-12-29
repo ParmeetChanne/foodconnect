@@ -2,6 +2,8 @@
 
 This project utilizes modern technologies to facilitate sharing surplus food and managing events efficiently.
 
+**CHECK OUT THE LIVE APP! <a href="https://foodsecure.vercel.com">foodsecure.vercel.com</a>**
+
 ## Tech Stack
 
 - Node.js
