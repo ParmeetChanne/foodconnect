@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍲 FoodSec - A Full Stack FoodSharing Platform
 
-## Getting Started
+This project utilizes modern technologies to facilitate sharing surplus food and managing events efficiently.
 
-First, run the development server:
+## Tech Stack
 
+- Node.js
+- Next.js
+- TypeScript
+- TailwindCSS
+- Stripe
+- Zod
+- React Hook Form
+- Shadcn
+- Uploadthing
+- Deployment on Vercel
+
+## Features
+
+### Authentication with Clerk
+- CRUD operations: User management via Clerk ensures secure and efficient authentication.
+
+### Food Offerings Management Features (CRUD)
+- Comprehensive CRUD functionality for food offerings: Create, Read, Update, and Delete offerings.
+  - **Create Offerings:** Easily generate new offerings with title, availability, location, and additional details.
+  - **Read:** Access detailed food information including descriptions, availability, and more.
+  - **Update:** Dynamically modify food details for accuracy.
+  - **Delete:** Streamlined process for administrators to manage and curate the platform effectively.
+- **Related Offerings:** Smartly connects related offerings with similar categories, enhancing engagement on event details pages.
+
+### Display Offerings
+- Efficiently display offerings created by users on their profile.
+
+### Search & Filter
+- Robust search and filter system empowering users to find preferred offerings effortlessly.
+
+### Category Management
+- Dynamic categorization for seamless addition of new food categories, ensuring adaptability.
+
+### Stripe Integration
+- Smooth and secure payment transactions using Stripe, improving user checkout experience.
+
+### Order Management
+- Comprehensive order management system providing a clear overview of food-related transactions.
+- Efficient search functionality for orders, facilitating easy tracking and management.
+...and many more, including robust code architecture and reusability.
+
+## Quick Start
+
+Follow these steps to set up the project locally on your machine:
+
+### Prerequisites
+- Git
+- Node.js
+- npm (Node Package Manager)
+
+### Cloning the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/your-project.git
+cd your-project
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```npm install```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Setting Up Environment Variables
+Create a new file named .env in the root of your project and add the following content:
+```js
+#NEXT
+NEXT_PUBLIC_SERVER_URL=
 
-## Learn More
+#CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_CLERK_WEBHOOK_SECRET=
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#MONGODB
+MONGODB_URI=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#UPLOADTHING
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
 
-## Deploy on Vercel
+#STRIPE
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Running the Project
+```js
+npm start
+```
