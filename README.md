@@ -8,6 +8,9 @@ This project perfectly aligns with my goal of achieving Zero Hunger (UN SDG 2) b
 
 **CHECK OUT THE LIVE APP! <a href="https://foodsecure.vercel.app">foodsecure.vercel.app</a>**
 
+![image](https://github.com/ParmeetChanne/foodsecure/assets/67189839/55ce32ac-8f53-4e71-98a6-c6935b0cba78)
+
+
 ## Tech Stack
 
 - Node.js: Backend
