@@ -6,16 +6,16 @@ This project utilizes modern technologies to facilitate sharing surplus food and
 
 ## Tech Stack
 
-- Node.js
-- Next.js
-- TypeScript
-- TailwindCSS
-- Stripe
-- Zod
-- React Hook Form
-- Shadcn
-- Uploadthing
-- Deployment on Vercel
+- Node.js: Backend
+- Next.js: Frontend
+- TypeScript: Scripting
+- TailwindCSS: Styling
+- Stripe: Authentication
+- Zod: Schema Declaration & Error Handling
+- React Hook Form: Easier Form Validation and Management
+- Shadcn: Clean and Modern Frontend Components
+- Uploadthing: Uploading Server For Images
+- Vercel: Seamless Auto-Deployments with Github Integration
 
 ## Features
 
@@ -45,7 +45,7 @@ This project utilizes modern technologies to facilitate sharing surplus food and
 ### Order Management
 - Comprehensive order management system providing a clear overview of food-related transactions.
 - Efficient search functionality for orders, facilitating easy tracking and management.
-...and many more, including robust code architecture and reusability.
+- Robust code architecture and reusability.
 
 ## Quick Start
 
@@ -69,10 +69,10 @@ cd your-project
 # Setting Up Environment Variables
 Create a new file named .env in the root of your project and add the following content:
 ```js
-#NEXT
+//NEXT
 NEXT_PUBLIC_SERVER_URL=
 
-#CLERK
+//CLERK
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 NEXT_CLERK_WEBHOOK_SECRET=
@@ -82,14 +82,14 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-#MONGODB
+//MONGODB
 MONGODB_URI=
 
-#UPLOADTHING
+//UPLOADTHING
 UPLOADTHING_SECRET=
 UPLOADTHING_APP_ID=
 
-#STRIPE
+//STRIPE
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
