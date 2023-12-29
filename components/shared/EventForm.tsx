@@ -254,7 +254,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         )}
                     />
 
-                <FormField
+                {/*<FormField
                     control={form.control}
                     name="url"
                     render={({ field }) => (
@@ -268,7 +268,7 @@ const EventForm = ({userId, type, event, eventId}: EventFormProps) => {
                         <FormMessage />
                     </FormItem>
                     )}
-                />
+                />*/}
             </div>
             {/* Disabling the button when the user is submitting it */}
           <Button type="submit" size="lg" disabled={form.formState.isSubmitting} className="button col-span-2 w-full">{form.formState.isSubmitting ? ("Submitting..."): `${type} Food`}</Button>
