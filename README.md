@@ -1,4 +1,4 @@
-# 🍲 FoodSec - A Full Stack FoodSharing Platform
+# 🍲 FoodSec - A Full Stack Food Sharing Platform
 
 This project utilizes modern technologies to facilitate the sharing of surplus food and managing events efficiently.
 
