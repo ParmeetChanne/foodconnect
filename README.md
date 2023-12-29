@@ -3,7 +3,8 @@
 This project utilizes modern technologies to facilitate the sharing of surplus food and managing events efficiently.
 
 ## Inspiration
-As a volunteer at Dailybread Canada, I was involved with sorting and packaging donated food to make it accessible to consumers and for transportation. I decided that I could create an online platform where individuals can upload their surplus food, which can be picked up by food banks or other individuals in need. This project perfectly aligns with my goal of achieving Zero Hunger (UN SDG 2) by utilizing technology and maximizing impact.
+As a volunteer at Dailybread Canada, I was involved with sorting and packaging donated food to make it accessible to consumers and for transportation. I decided that I could create an online platform where individuals can upload their surplus food, which can be picked up by food banks or other individuals in need.
+This project perfectly aligns with my goal of achieving Zero Hunger (UN SDG 2) by utilizing technology and maximizing impact.
 
 **CHECK OUT THE LIVE APP! <a href="https://foodsecure.vercel.app">foodsecure.vercel.app</a>**
 
