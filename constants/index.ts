@@ -5,7 +5,7 @@ export const headerLinks = [
     },
     {
       label: 'Share Food',
-      route: '/events/create',
+      route: '/foods/create',
     },
     {
       label: 'My Profile',

@@ -51,7 +51,7 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
         <div className="wrapper flex items-center justify-center sm:justify-between">
           <h3 className='h3-bold text-center sm:text-left'>My Food Listings</h3>
           <Button asChild size="lg" className="button hidden sm:flex">
-            <Link href="/events/create">
+            <Link href="/foods/create">
               Create New Offering
             </Link>
           </Button>
