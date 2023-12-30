@@ -102,7 +102,12 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 ```
 
-# Running the Project
+## Running the Project
 ```js
 npm start
 ```
+
+## Stripe Dashboard
+![image](https://github.com/ParmeetChanne/foodsecure/assets/67189839/6a82ac3b-61d8-4dfc-896f-8bf597860724)
+![image](https://github.com/ParmeetChanne/foodsecure/assets/67189839/6f525fca-1531-4470-bb62-cf9a85fd7ad1)
+
