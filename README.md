@@ -1,6 +1,6 @@
 # 🍲 FoodSec - A Full Stack Food Sharing Platform
 
-This project utilizes modern technologies to facilitate the sharing of surplus food and managing events efficiently.
+This project utilizes modern technologies to facilitate the sharing of surplus food and managing the offerings efficiently.
 
 ## Inspiration
 As a volunteer at Dailybread Canada, I was involved with sorting and packaging donated food to make it accessible to consumers and for transportation. I decided that I could create an online platform where individuals can upload their surplus food, which can be picked up by food banks or other individuals in need.
